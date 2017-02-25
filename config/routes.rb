@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   get 'admin/index'
 
   devise_for :admins
