@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Image</th>
+      <th>Cover</th>
       <th>Body</th>
       <th>Video</th>
       <th>Plot</th>
@@ -23,7 +23,7 @@
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.name %></td>
-        <td><%= article.image %></td>
+        <td><%= image_tag article.cover.url(:thumb) %></td>
         <td><%= article.body %></td>
         <td><%= article.video %></td>
         <td><%= article.plot %></td>
