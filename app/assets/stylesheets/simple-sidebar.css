@@ -159,7 +159,7 @@
 
 .sidebar-three {
     position: absolute;
-    top: 40em;
+    top: 33em;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -217,12 +217,19 @@
     float:left;
     position: relative;
     width: 30%;
-    padding-bottom : 20%; /* = width for a 1:1 aspect ratio */
+    /* padding-bottom : 5%;  = width for a 1:1 aspect ratio */
     margin:1.66%;
     background: #151515;
-    border-style: solid;
+    border: 1px solid;
     border-color: #39bd9f;
+    text-align: center;
 }
+.square i{
+    color: #39bd9f;
+    vertical-align: middle;
+    padding: 30%;
+}
+
 
 @media(min-width:768px) {
     #wrapper {
