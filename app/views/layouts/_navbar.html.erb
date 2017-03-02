@@ -5,12 +5,15 @@
         </a>
     </li>
 	<% if admin_signed_in? %>
-	    <li>
-	    	<%= link_to "Logout", destroy_admin_session_path, :method => :delete %>
+		<li class="col-lg-6 col-md-6">
+	    	<%= link_to "PERFIL", destroy_admin_session_path, :method => :delete %>
+	    </li>
+	    <li class="col-lg-6 col-md-6">
+	    	<%= link_to "SALIR", destroy_admin_session_path, :method => :delete %>
 	    </li>
     <% else %>
-	    <li>
-	    	<%= link_to "Iniciar Sesion",  new_admin_session_path%>
+	    <li class="centrar">
+	    	<%= link_to "INICIAR SESIÓN",  new_admin_session_path%>
 	    </li>
     <% end %>
 </ul>
@@ -33,18 +36,18 @@
 </div>
 <ul class="sidebar-three">
 	<li>
-        <a href="#">Overview</a>
+        <a href="#">OVERVIEW</a>
     </li>
     <li>
-        <a href="#">Events</a>
+        <a href="#">EVENTS</a>
     </li>
     <li>
-        <a href="#">About</a>
+        <a href="#">ABOUT</a>
     </li>
     <li>
-        <a href="#">Services</a>
+        <a href="#">SERVICES</a>
     </li>
     <li>
-        <a href="#">Contact</a>
+        <a href="#">CONTACT</a>
     </li>
 </ul>

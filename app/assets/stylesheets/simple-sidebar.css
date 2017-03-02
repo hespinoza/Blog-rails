@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
  body {
     overflow-x: hidden;
  }
@@ -35,6 +38,7 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-family: 'Roboto', sans-serif;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -76,7 +80,7 @@
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: #39bd9f;
 }
 
 .sidebar-nav li a:active,
@@ -207,6 +211,7 @@
     padding: 15px;
     width: auto;
 }
+
 .contenedor-menu{
     padding: 10px;
 }
@@ -229,6 +234,10 @@
     vertical-align: middle;
     padding: 30%;
 }
+.centrar{
+    text-align: center;
+}
+
 
 
 @media(min-width:768px) {
