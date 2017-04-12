@@ -2,7 +2,7 @@
   <% @articles.each do |article| %>
     <article class="white-panel">
       <% if article.cover.present? %>
-        <%= image_tag article.cover.url(:mini) %>
+        <%= link_to image_tag(article.cover.url(:mini)), article %>
       <%else%>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<%= article.video %>" allowfullscreen></iframe>
@@ -14,7 +14,6 @@
   <% end %>
 </section>
 <br>
-<hr>
 <%= link_to 'New Article', new_article_path %>
 
 
